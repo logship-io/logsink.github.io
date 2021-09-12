@@ -1,7 +1,7 @@
 ---
 name: Adam Sulucz
 position: Janitorial Staff / Junior Software Developer Apprentice
-image_path: https://source.unsplash.com/collection/139386/605x605?a=.png
+image_path: {{ site.baseurl }}/images/adam.jpeg
 twitter: 
 blurb: Doesn't really do anything here.
 ---
