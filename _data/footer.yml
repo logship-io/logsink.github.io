@@ -1,0 +1,19 @@
+- links:
+  - name: Pricing
+    link: /pricing/
+  - name: Blog
+    link: /blog/
+  - name: About
+    link: /about/
+- links:
+  - name: Docs
+    link: /
+    new_window: true
+  - name: Status
+    link: /
+    new_window: true
+- links:
+  - name: RSS
+    link: /feed.xml
+    social_icon: RSS
+    new_window: false
