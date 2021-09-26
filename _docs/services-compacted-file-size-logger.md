@@ -7,6 +7,8 @@ date: 2021-09-26
 
 The compacted file size logger service emits metrics on the total size, count, and number of rows of files within the entire system.
 
+## Details
+
 The Service is responsible for emitting 3 metrics:
 
 Metric                                  | Value                                                                |

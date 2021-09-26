@@ -13,6 +13,8 @@ table
 | where stringColumn contains "abc"
 ```
 
+## Details
+
 The `where` expresion applies filters to a query. These filters depend on the column type, and are pushed down to the query optimizer to limit the data returned.
 
 ## Notes

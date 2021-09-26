@@ -8,6 +8,8 @@ author_staff_member: peter
 
 We now have documentation for our subset of the Kusto Query Language! The docs are still a work in progress, but will help alleviate some of the difficulties while building queries on the backend. 
 
+## Updates
+
 This is one small step for the ship, but a giant steps for documentation on a locally deployed product.
 
 * [Where Expression](/docs/kusto-where/)

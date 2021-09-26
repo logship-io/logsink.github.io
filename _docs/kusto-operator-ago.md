@@ -7,6 +7,8 @@ date: 2021-09-26
 
 The `ago` operator returns a datetime of 'time range' in the past.
 
+## Details
+
 ```
 ago(<time range>)
 

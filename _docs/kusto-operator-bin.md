@@ -7,6 +7,8 @@ date: 2021-09-26
 
 The `bin` operator floors values by a given interval.
 
+## Details
+
 ```
 bin(value, rounding increment)
 ```

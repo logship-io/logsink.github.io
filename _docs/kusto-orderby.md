@@ -11,6 +11,8 @@ table
 
 ```
 
+## Details
+
 The `orderby` expression will sort the result set by the given columns.
 
 ## Notes
