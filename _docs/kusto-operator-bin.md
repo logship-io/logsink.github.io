@@ -1,5 +1,5 @@
 ---
-title: kusto ago operator
+title: kusto bin operator
 categories: kusto operator
 author_staff_member: peter
 date: 2021-09-26

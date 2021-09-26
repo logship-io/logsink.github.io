@@ -12,4 +12,4 @@ table
 
 ```
 
-The `project` command selects the columns or fields returned by a query. It can be used anywhere within the query pipeline.
+The `project` expresion selects the columns or fields returned by a query. It can be used anywhere within the query pipeline.

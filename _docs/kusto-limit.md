@@ -12,4 +12,4 @@ table
 
 ```
 
-The `take` command limits the number of results returned in a query. It can be used anywhere within the query pipeline.
+The `take` expresion limits the number of results returned in a query. It can be used anywhere within the query pipeline.

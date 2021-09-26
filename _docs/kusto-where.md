@@ -13,7 +13,7 @@ table
 | where stringColumn contains "abc"
 ```
 
-The `where` command applies filters to a query. These filters depend on the column type, and are pushed down to the query optimizer to limit the data returned.
+The `where` expresion applies filters to a query. These filters depend on the column type, and are pushed down to the query optimizer to limit the data returned.
 
 ## Notes
 
