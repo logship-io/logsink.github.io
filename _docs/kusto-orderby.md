@@ -1,0 +1,17 @@
+---
+title: kusto orderby
+categories: kusto
+author_staff_member: peter
+date: 2021-09-26
+---
+
+```kusto
+table
+| orderby column1, column2, column3
+
+```
+
+The `orderby` sort the result set
+
+## Notes
+Be aware of cardinality here. This is a very memory intensive operation, as the result set needs to be kept available as the sort runs.

@@ -28,6 +28,9 @@ timezone: Etc/UTC
 collections:
   staff_members:
     _hide_content: true
+  docs:
+    _hide_content: false
+    output: true
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -46,6 +49,14 @@ defaults:
   - scope:
       path: ""
       type: "staff_members"
+    values:
+      _options:
+        image_path:
+          width: 600
+          height: 600
+  - scope:
+      path: ""
+      type: "docs"
     values:
       _options:
         image_path:

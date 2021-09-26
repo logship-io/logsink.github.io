@@ -7,7 +7,7 @@
     link: /about/
 - links:
   - name: Docs
-    link: /
+    link: /docs/
     new_window: true
   - name: Status
     link: /
