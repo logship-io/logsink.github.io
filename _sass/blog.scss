@@ -123,3 +123,13 @@
 		right: -3px;
 	}
 }
+
+table {
+	border-spacing: 0 0;
+	td, th {
+		padding: 1em;
+		border-style: solid;
+		border-width: 1px;
+		border-spacing: 0;
+	}
+}
