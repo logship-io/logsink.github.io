@@ -26,7 +26,7 @@ Example config.json:
 # App Settings
 The agent application settings, defined within the `appSettings` section.
 
-Configuration Options:
+#### Configuration Options
 
 Name                | Type   | Default Value | Description                                                   |
 --------------------|--------|---------------|---------------------------------------------------------------|
@@ -41,13 +41,10 @@ Maximum `appSettings` configuration:
 }
 ```
 
-# Connection Strings
-_todo_
-
 # journalctl
 Read journalctl trace messages, defined within the `journald` section.
 
-Configuration Options:
+#### Configuration Options
 
 Name  | Type     | Default Value | Description                                      |
 ------|----------|---------------|--------------------------------------------------|
@@ -68,7 +65,7 @@ Maximum `journald` configuration:
 # UDP Metrics
 Read UDP metrics from a port, defined within the `udp_metrics` section.
 
-Configuration Options:
+#### Configuration Options
 
 Name     | Type   | Default Value    | Description                       |
 ---------|--------|------------------|-----------------------------------|
@@ -84,7 +81,7 @@ Maximum `udp_metrics` configuration:
 # Windows PDH Metrics
 Read metrics from Windows PDH, defined within the `win32_metrics` section.
 
-Configuration Options:
+#### Configuration Options
 
 Name      | Type     | Default Value | Description               |
 ----------|----------|---------------|---------------------------|
@@ -110,7 +107,7 @@ Maximum `win32_metrics` configuration:
 # Windows ETW Trace
 Read trace messages through Windows ETW, defined within the `win32_etwtrace` section.
 
-Configuration Options:
+#### Configuration Options
 
 Name                  | Type     | Default Value                            | Description                                            |
 ----------------------|----------|------------------------------------------|--------------------------------------------------------|
