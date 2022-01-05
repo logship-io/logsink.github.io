@@ -27,10 +27,11 @@ Example config.json:
 The agent application settings, defined within the `appSettings` section.
 
 Configuration Options:
-Name | Type | Default Value | Description
----- | ---- | ------------- | -----------
-address|string|None|The ingestion endpoint for your logship host.
-maxRequestSizeBytes|u64|1000000|The maximum request size (in bytes) for metric/trace uploads.
+
+Name                | Type   | Default Value | Description                                                   |
+--------------------|--------|---------------|---------------------------------------------------------------|
+address             | string | None          | The ingestion endpoint for your logship host.                 |
+maxRequestSizeBytes | u64    | 1000000       | The maximum request size (in bytes) for metric/trace uploads. |
 
 Maximum `appSettings` configuration:
 ```json
@@ -47,9 +48,10 @@ _todo_
 Read journalctl trace messages, defined within the `journald` section.
 
 Configuration Options:
-Name | Type | Default Value | Description
----- | ---- | ------------- | -----------
-units|string[]|None|The units (`-u`) passed to `journalctl --follow`.
+
+Name  | Type     | Default Value | Description                                      |
+------|----------|---------------|--------------------------------------------------|
+units | string[] | None          |The units (`-u`) passed to `journalctl --follow`. |
 
 Maximum `journald` configuration:
 ```json
@@ -67,9 +69,10 @@ Maximum `journald` configuration:
 Read UDP metrics from a port, defined within the `udp_metrics` section.
 
 Configuration Options:
-Name | Type | Default Value | Description
----- | ---- | ------------- | -----------
-endpoint|string|"127.0.0.1:9009"|The UDP metric listener endpoint.
+
+Name     | Type   | Default Value    | Description                       |
+---------|--------|------------------|-----------------------------------|
+endpoint | string | "127.0.0.1:9009" | The UDP metric listener endpoint. |
 
 Maximum `udp_metrics` configuration:
 ```json
@@ -82,9 +85,10 @@ Maximum `udp_metrics` configuration:
 Read metrics from Windows PDH, defined within the `win32_metrics` section.
 
 Configuration Options:
-Name | Type | Default Value | Description
----- | ---- | ------------- | -----------
-providers|string[]|None|The PDH metric providers.
+
+Name      | Type     | Default Value | Description               |
+----------|----------|---------------|---------------------------|
+providers | string[] | None          | The PDH metric providers. |
 
 Maximum `win32_metrics` configuration:
 ```json
@@ -107,11 +111,12 @@ Maximum `win32_metrics` configuration:
 Read trace messages through Windows ETW, defined within the `win32_etwtrace` section.
 
 Configuration Options:
-Name | Type | Default Value | Description
----- | ---- | ------------- | -----------
-file_output_directory|string|"C:\\temp\\agent\\"|The directory to (temporarily) store unread ETL files.
-log_file_pattern|string|"logship_agent_rust_%d.etl"|The filename format for stored ETL files.
-providers|string[]|["4d1b58e1-1220-542a-815b-41707a19672d"]|The ETW providers to read trace logs from.
+
+Name                  | Type     | Default Value                            | Description                                            |
+----------------------|----------|------------------------------------------|--------------------------------------------------------|
+file_output_directory | string   | "C:\\temp\\agent\\"                      | The directory to (temporarily) store unread ETL files. |
+log_file_pattern      | string   | "logship_agent_rust_%d.etl"              | The filename format for stored ETL files.              |
+providers             | string[] | ["4d1b58e1-1220-542a-815b-41707a19672d"] | The ETW providers to read trace logs from.             |
 
 Maximum `appSettings` configuration:
 ```json
@@ -126,5 +131,5 @@ Read system information, defined within the `sys_info` section.
 
 Maximum `sys_info` configuration:
 ```json
-"sys_info": {  }
+"sys_info": { }
 ```
