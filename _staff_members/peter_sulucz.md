@@ -1,7 +1,7 @@
 ---
 name: Peter Sulucz
-position: CEO / CTO / CFO / Lead Architect / Lead Developer
+position: Junior Pug Manager, Employee
 image_path: /images/peter.jpg
 twitter: 
-blurb: Designer of all services.
+blurb: shutting it 24/7
 ---
