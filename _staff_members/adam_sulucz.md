@@ -1,6 +1,6 @@
 ---
 name: Adam Sulucz
-position: Master of Coin, Programming Lead
+position: Learning Java
 image_path: /images/adam.jpg
 twitter: 
 blurb: Doesn't really do anything here.

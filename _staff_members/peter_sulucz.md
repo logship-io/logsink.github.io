@@ -1,7 +1,7 @@
 ---
 name: Peter Sulucz
-position: Junior Pug Manager, Employee
+position: CEO, CFO, Genius
 image_path: /images/peter.jpg
 twitter: 
-blurb: shutting it 24/7
+blurb: genius
 ---
