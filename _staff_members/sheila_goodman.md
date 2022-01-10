@@ -1,7 +1,7 @@
 ---
 name: Sheila Good Man
-position: HR, Wife, Influencer
+position: HR?
 image_path: /images/staff/sheila.jpg
 twitter: 
-blurb:
+blurb: Just wanted to be featured
 ---

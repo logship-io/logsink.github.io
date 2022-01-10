@@ -5,12 +5,12 @@ author_staff_member: peter
 date: 2021-09-26
 ---
 
-The `bin` operator floors values by a given interval.
+The `round` operator floors values by a given interval.
 
 ## Details
 
 ```
-bin(value, rounding increment)
+round(value, rounding increment)
 ```
 
 ## Examples
@@ -18,5 +18,5 @@ bin(value, rounding increment)
 Given a timestamp, will floor each value to the nearest 5 minutes.
 ```kusto
 table
-| project bin(PreciseTimeStamp, 5m)
+| project round(PreciseTimeStamp, 5m)
 ```

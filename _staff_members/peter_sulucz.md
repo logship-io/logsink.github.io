@@ -1,6 +1,6 @@
 ---
 name: Peter Sulucz
-position: CEO, CFO, Genius
+position: Backend Infrastructure / Software
 image_path: /images/peter.jpg
 twitter: 
 blurb: genius
