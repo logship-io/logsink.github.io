@@ -1,7 +1,7 @@
 ---
 name: Peter Sulucz
-position: Backend Infrastructure / Software
+position: Founder; Backend Development; Amoral Center
 image_path: /images/peter.jpg
 twitter: 
-blurb: genius
+blurb: idiot
 ---

@@ -1,6 +1,6 @@
 ---
 name: Neil Dawson-Elli
-position: Claimed he knew "AI"
+position: Proud Future Husband
 image_path: /images/staff/neal.jpg
 twitter: 
 blurb: a very proud husband
