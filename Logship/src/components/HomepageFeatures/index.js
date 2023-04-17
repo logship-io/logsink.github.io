@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Take control of your data',
-    Svg: require('@site/static/img/homepage/SearchChart.svg').default,
+    Svg: require('@site/static/img/homepage/Spaceship.svg').default,
     description: (
       <>
         Nothing leaves your network unless you want it to. Hosted on-premise or in the cloud, the power is in your hands.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Scale as you grow',
-    Svg: require('@site/static/img/homepage/Spaceship.svg').default,
+    Svg: require('@site/static/img/homepage/SearchChart.svg').default,
     description: (
       <>
         Pull in as many logs and metrics as your infrastructure can handle. Expand to fill your needs as you improve your infrastructure.
