@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   overflow="hidden"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="upwardschart.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.92709556"
+     inkscape:cx="279.3671"
+     inkscape:cy="324.66988"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs14">
+    <clipPath
+       id="clip1">
+      <rect
+         x="26"
+         y="14"
+         width="693"
+         height="692"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         x="26"
+         y="14"
+         width="693"
+         height="692"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         x="26"
+         y="14"
+         width="693"
+         height="692"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath202">
+      <g
+         id="g206"
+         transform="translate(79.322034,125.08475)">
+        <rect
+           x="-79.322037"
+           y="-125.08475"
+           width="1280"
+           height="720"
+           id="rect204" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath208">
+      <g
+         id="g212">
+        <rect
+           x="-79.322037"
+           y="-125.08475"
+           width="1280"
+           height="720"
+           id="rect210" />
+      </g>
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clipPath202)"
+     id="g26"
+     transform="matrix(0.48998662,0,0,0.48998662,-55.352013,-48.138706)">
+    <g
+       clip-path="url(#clip2)"
+       id="g24">
+      <g
+         clip-path="url(#clip3)"
+         id="g22">
+        <path
+           d="m 281.125,378.091 38.204,35.523 53.652,-52.159 33.569,-33.476 38.298,33.793 129.887,-129.938 c 0.028,-0.028 0.074,-0.027 0.101,0.001 0.013,0.014 0.021,0.031 0.021,0.05 v 61.732 h 14.417 v -86.5 h -86.305 v 14.417 h 61.494 c 0.04,-0.004 0.075,0.026 0.079,0.065 10e-4,0.021 -0.006,0.042 -0.021,0.057 l -120.307,120.315 -38.298,-33.793 -43.012,43.012 -43.748,42.529 -38.363,-35.652 -112.579,112.587 10.192,10.192 z"
+           transform="matrix(1.00145,0,0,1,26,14)"
+           id="path18" />
+        <path
+           d="M 115.636,576.667 V 100.917 H 101.219 V 591.083 H 591.17 v -14.416 z"
+           transform="matrix(1.00145,0,0,1,26,14)"
+           id="path20" />
+      </g>
+    </g>
+  </g>
+</svg>
