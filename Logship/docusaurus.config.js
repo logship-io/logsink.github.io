@@ -43,14 +43,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/logsink/logsink.github.io/Logship/',
+            'https://github.com/logsink/logsink.github.io/tree/master/Logship',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/logsink/logsink.github.io/Logship/',
+            'https://github.com/logsink/logsink.github.io/tree/master/Logship',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
