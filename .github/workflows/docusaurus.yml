@@ -55,12 +55,11 @@ jobs:
       - name: Static HTML export with NPM
         working-directory: Logship
         run: |
-          npm install
-          npx docusaurus build
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist
+          path: ./build
 
   # Deployment job
   deploy:
