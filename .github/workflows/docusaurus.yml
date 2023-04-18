@@ -53,9 +53,10 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: Logship/package-lock.json
       - name: Static HTML export with NPM
+        working-directory: Logship
         run: |
-          npm install Logship
-          npx docusaurus build Logship
+          npm install
+          npx docusaurus build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
