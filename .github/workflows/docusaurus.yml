@@ -23,10 +23,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-  
-defaults:
-  run:
-    working-directory: Logship
 
 jobs:
   # Build job
@@ -55,19 +51,8 @@ jobs:
         with:
           node-version: "18"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-npm-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
-      - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with NPM
-        run: ${{ steps.detect-package-manager.outputs.manager }} docusaurus build
+        run: ${{ steps.detect-package-manager.outputs.manager }} docusaurus build Logship
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
