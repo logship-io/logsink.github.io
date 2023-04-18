@@ -50,7 +50,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: ${{ steps.detect-package-manager.outputs.manager }} Logship
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache-dependency-path: Logship/package-lock.json
       - name: Static HTML export with NPM
         run: ${{ steps.detect-package-manager.outputs.manager }} docusaurus build Logship
       - name: Upload artifact
