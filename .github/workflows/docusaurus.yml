@@ -2,7 +2,7 @@
 #
 # To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
 #
-name: Deploy Nuxt site to Pages
+name: Deploy site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -23,6 +23,10 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+  
+defaults:
+  run:
+    working-directory: Logship
 
 jobs:
   # Build job
@@ -34,11 +38,11 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+          if [ -f "${{ github.workspace }}/Logship/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
+          elif [ -f "${{ github.workspace }}/Logship/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             exit 0
@@ -51,21 +55,13 @@ jobs:
         with:
           node-version: "18"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        with:
-          # Automatically inject router.base in your Nuxt configuration file and set
-          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: nuxt
       - name: Restore cache
         uses: actions/cache@v3
         with:
           path: |
             dist
             .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+          key: ${{ runner.os }}-npm-build-${{ hashFiles('dist') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
