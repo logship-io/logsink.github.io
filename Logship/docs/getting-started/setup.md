@@ -5,6 +5,8 @@ title: Setup
 
 # Setup
 
+Initial setup
+
 This article will guide you through an initial setup with the logship server. The recommended deployment mechanism is via a container orchestrator. Although you're free to run the executables directly.
 
 ```
