@@ -22,12 +22,19 @@ You can find an example configuration in [the agent source on Github](https://gi
 
 -   **Description**: The interval at which data will be pushed to the endpoint.
 -   **Type**: string
--   **Required**: Yes
+-   **Required**: No
+
+### maximumBufferSize
+
+-   **Description**: The maximum size of the agent buffer in number of events. Events will be dropped if reached.
+-   **Type**: int
+-   **Required**: No
 
 ```json
 {
     "endpoint": "console",
-    "interval": "00:00:02"
+    "interval": "00:00:02",
+    "maximumBufferSize": 15000
 }
 ```
 
