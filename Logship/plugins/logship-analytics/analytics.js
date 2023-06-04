@@ -1,6 +1,6 @@
 //import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
-const INFLOW_URL = 'http://try.logship.ai:5000';
+const INFLOW_URL = 'https://app.logshit.com:5001';
 const INFLOW_ACCOUNT = '00000000-0000-0000-0000-000000000000';
 const uuid = function(){
     return Array
