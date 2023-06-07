@@ -38,3 +38,8 @@ With the little kahuna version you get:
 * Dedicated support
 * Multiple node deployments
 * Full account management
+
+## US Governement Customers
+
+God Bless America.
+We'll work with you and provide discounts. 
