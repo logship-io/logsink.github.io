@@ -4,8 +4,6 @@ title: Pricing
 
 # Pricing
 
-You don't need React to write simple standalone pages.
-
 ## Free
 
 Logship's base deployment is forever free.
