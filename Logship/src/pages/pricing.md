@@ -39,7 +39,7 @@ With the little kahuna version you get:
 * Multiple node deployments
 * Full account management
 
-## US Governement Customers
+## US Government Customers
 
-God Bless America.
+God Bless America. 🇺🇸
 We'll work with you and provide discounts. 
