@@ -37,5 +37,5 @@ With the big kahuna version you get:
 
 ## US Government Customers
 
-God Bless America.
+God Bless America. 🇺🇸
 We'll work with you and provide discounts. 
