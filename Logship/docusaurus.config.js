@@ -7,12 +7,12 @@ const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'logship.ai',
+  title: 'logship.io',
   tagline: 'Logs aggregation for the masses',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://logship.ai',
+  url: 'https://logship.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',

@@ -11,4 +11,4 @@ docker pull ghcr.io/logsink/logship-agent:latest
 docker run -d --network=host ghcr.io/logsink/logship-agent:latest
 ```
 
-Boom, and there you have it, metrics should start flowing to [http://try.logship.ai](http://try.logship.ai)
+Boom, and there you have it, metrics should start flowing to [https://try.logship.io](https://try.logship.io)

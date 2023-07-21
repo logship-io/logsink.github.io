@@ -8,7 +8,7 @@ tags: [dashboard, grafana, logship, service-catalog]
 
 # New Dashboard
 
-Check out our new [Device Drilldown](https://grafana.logship.ai/d/c1609d22-3cbd-4101-b772-b4dd51c438be/device-drilldown?from=now-30m&to=now) dashboard in Grafana!
+Check out our new [Device Drilldown](https://grafana.logship.io/d/c1609d22-3cbd-4101-b772-b4dd51c438be/device-drilldown?from=now-30m&to=now) dashboard in Grafana!
 
 In-depth system information, metrics, and logs; easily accessible on a dashboard.
 

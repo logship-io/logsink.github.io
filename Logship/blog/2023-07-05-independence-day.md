@@ -47,7 +47,7 @@ on any machine that has the proper kubeconfig. Nice.
 
 Thanks for reading!
 
-Transition generally comes with pain. If you see any issues or dead links, please let us know at [support@logship.ai](mailto:support@logship.ai).
+Transition generally comes with pain. If you see any issues or dead links, please let us know at [support@logship.io](mailto:support@logship.io).
 
 ---
 
