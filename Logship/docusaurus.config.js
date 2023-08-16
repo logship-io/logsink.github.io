@@ -73,7 +73,7 @@ const config = {
         title: 'Logship',
         logo: {
           alt: 'Logship Logo',
-          src: 'img/homepage/Spaceship.svg',
+          src: 'img/homepage/logship-optimized.svg',
         },
         items: [
           {
