@@ -1,17 +1,14 @@
 FROM node:lts AS build
+ENV NPM_CONFIG_LOGLEVEL=warn
+ENV NPM_CONFIG_COLOR=false
 WORKDIR /usr/src/app
-COPY ./Logship/package*.json ./
-RUN npm install
 COPY ./Logship/ ./
+RUN npm install
 RUN npm run build
 
 # Deployment step
-
-FROM busybox:latest as deploy
-RUN adduser -D static
-USER static
-WORKDIR /home/static
-COPY --from=build /usr/src/app/build/ ./
-
-EXPOSE 3001
-CMD ["busybox", "httpd", "-f", "-v", "-p", "3001"]
+FROM docker.io/library/nginx:stable-alpine as deploy
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=build /usr/src/app/build .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
