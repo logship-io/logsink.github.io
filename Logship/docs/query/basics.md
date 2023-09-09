@@ -2,23 +2,17 @@
 sidebar_position: 1
 ---
 
-The basics of creating a chart using logship charts!
+The basics of querying the logship backend database.
 
-## Overview
-Logship charting uses Kusto queries over the backend metris or logs data to produce charts.
+## Kusto
+You can use the Kusto Query language to query the logship server. This assume's you've already got a logship deployment, if not refer to [getting-started](../getting-started/single_node_deployment.md).
 
-![Logship Charts screenshot](../../static/img/screenshots/2021-09-26/logship_charts.png)
+### Example query
+Hop on over to the query page on your deployment [(or on the public site)](https://try.logship.io/query). 
 
-Charts are built using queries like this one: 
+A simple query listing all of the accessible tables in your database. This uses the special schema namespace, which stores all sorts of interesting information about the database.
 ```kusto
-[proc.stat.cpu] 
-| where PreciseTimestamp > {startTime}
-| where PreciseTimestamp < {endTime}
-| where processname contains 'logship'
-| project PreciseTimestamp, machinename, processname, average
+schema.tables
+| project TableName, DatabaseName
+| limit 100
 ```
-
-The charts will graph the first available "number" value in your query result ('average' in the example above). And MUST contain the "PreciseTimestamp" field. Each unique set of tags will graph an individual series, or line on your chart.
-
-### Paramaterization
-Parameters allow you to link queries to controllable fields on the UI. The `{startTime}` and `{endTime}` values will always be available, and are tied to the time controls on the metrics page.

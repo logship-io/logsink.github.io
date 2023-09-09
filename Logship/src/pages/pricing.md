@@ -10,6 +10,7 @@ Logship's base deployment is forever free.
 With the free version you get:
 
 * As many users as your infrastructure can handle
+* Use for development and evaluation
 * No dedicated support
 * Local single node deployments
 
