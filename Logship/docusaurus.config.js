@@ -35,7 +35,15 @@ const config = {
   },
 
   plugins: [
-    path.resolve(__dirname, './plugins/logship-analytics')
+    path.resolve(__dirname, './plugins/logship-analytics'),
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        indexBlog: true,
+        language: ["en"],
+      },
+    ]
   ],
 
   presets: [
