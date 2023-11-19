@@ -5,6 +5,21 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const path = require('path');
 
+const logo = (() => {
+  const now = new Date();
+  if (now.getMonth() === 11 && now.getDate() >= 0) {
+      return 'img/homepage/logo_christmas.svg';
+  } else if (now.getMonth() === 6 && now.getDate() >= 1 && now.getDate() <= 7) {
+      return 'img/homepage/logo_usa.svg';
+  } else if (now.getMonth() === 10 && now.getDate() >= 10) {
+      return 'img/homepage/logo_thanksgiving.svg';
+  } else if (now.getMonth() === 1 && now.getDate() >= 10 && now.getDate() <= 20) {
+      return 'img/homepage/logo_valentines.svg';
+  } else {
+      return 'img/homepage/logo.svg';
+  }
+})();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'logship.io',
@@ -81,7 +96,7 @@ const config = {
         title: 'Logship',
         logo: {
           alt: 'Logship Logo',
-          src: 'img/homepage/logship-optimized.svg',
+          src: logo,
         },
         items: [
           {
