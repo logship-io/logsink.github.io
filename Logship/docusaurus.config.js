@@ -5,9 +5,17 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const path = require('path');
 
+function getNthWeekdayOfMonth(year, month, weekday, n) {
+  const date = new Date(year, month, 1);
+  date.setDate(1 + (weekday - date.getDay() + 7) % 7 + (n - 1) * 7);
+  return date;
+}
+
 const logo = (() => {
   const now = new Date();
-  if (now.getMonth() === 11 && now.getDate() >= 0) {
+  const tgiving = getNthWeekdayOfMonth(now.getFullYear(), 10, 4, 4); // Thanksgiving Day - Fourth Thursday in November
+
+  if (now > tgiving && now.getDate() > tgiving.getDate()) {
       return 'img/homepage/logo_christmas.svg';
   } else if (now.getMonth() === 6 && now.getDate() >= 1 && now.getDate() <= 7) {
       return 'img/homepage/logo_usa.svg';
