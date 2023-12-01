@@ -5,7 +5,7 @@ sidebar_position: 1
 The basics of querying the logship backend database.
 
 ## Kusto
-You can use the Kusto Query language to query the logship server. This assume's you've already got a logship deployment, if not refer to [getting-started](../getting-started/single_node_deployment.md).
+You can use the Kusto Query language to query the logship server. This assume's you've already got a logship deployment, if not refer to [Getting Started](/docs/getting-started/prerequisites).
 
 ### Example query
 Hop on over to the query page on your deployment [(or on the public site)](https://try.logship.io/query). 

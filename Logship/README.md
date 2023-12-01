@@ -1,6 +1,6 @@
 # Website
 
-To run this site, you need to unfortunatly install node.
+To run this site, you need to unfortunately install node.
 
 ```
 cd Logship

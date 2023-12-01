@@ -29,7 +29,7 @@ const logo = (() => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'logship.io',
+  title: 'logship',
   tagline: 'Logs aggregation for the masses',
   favicon: 'img/favicon.ico',
 
@@ -41,7 +41,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'logsink', // Usually your GitHub org/user name.
+  organizationName: 'logship-io', // Usually your GitHub org/user name.
   projectName: 'logsink.github.io', // Usually your repo name.
   trailingSlash: false,
 
@@ -78,14 +78,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/logsink/logsink.github.io/tree/master/Logship',
+            'https://github.com/logship-io/logsink.github.io/tree/master/Logship',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/logsink/logsink.github.io/tree/master/Logship',
+            'https://github.com/logship-io/logsink.github.io/tree/master/Logship',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -106,16 +106,17 @@ const config = {
           src: logo,
         },
         items: [
+          { to: '/docs/getting-started/prerequisites', label: 'Get Started ⇥', position: 'left' },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Getting Started',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/pricing', label: 'Pricing', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/pricing', label: 'Pricing', position: 'left'},
           {
-            href: 'https://github.com/logsink/logsink.github.io/',
+            href: 'https://github.com/logship-io',
             label: 'GitHub',
             position: 'right',
           },
@@ -128,9 +129,10 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Getting Started',
+                label: 'Docs',
                 to: '/docs/intro',
               },
+            { to: '/docs/getting-started', label: 'Get Started ⇥', position: 'left' },
             ],
           },
           {
@@ -142,14 +144,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/logsink/logsink.github.io/',
+                href: 'https://github.com/logship-io',
               },
+              
             ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Logship LLC.`,
       },
       prism: {
+        additionalLanguages: ['powershell', 'kusto'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
