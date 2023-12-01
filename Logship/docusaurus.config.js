@@ -14,8 +14,7 @@ function getNthWeekdayOfMonth(year, month, weekday, n) {
 const logo = (() => {
   const now = new Date();
   const tgiving = getNthWeekdayOfMonth(now.getFullYear(), 10, 4, 4); // Thanksgiving Day - Fourth Thursday in November
-
-  if (now > tgiving && now.getDate() > tgiving.getDate()) {
+  if (now > tgiving && (now.getMonth() == 11 || now.getDate() > tgiving.getDate())) {
       return 'img/homepage/logo_christmas.svg';
   } else if (now.getMonth() === 6 && now.getDate() >= 1 && now.getDate() <= 7) {
       return 'img/homepage/logo_usa.svg';
