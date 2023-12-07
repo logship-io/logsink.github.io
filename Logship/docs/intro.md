@@ -18,7 +18,7 @@ Logship is a scalable, highly available, all-in-one platform for metrics, loggin
 * CLI and UI tools for data management, configuration, and control.
 * An open source agent for metrics and logs ingestion.
 
-All of this easily deployed *almost* anywhere. [Get started](/docs/getting-started/) and see how easy it is to start collecting on your own observability platform.
+All of this easily deployed *almost* anywhere. [Get started](/docs/getting-started/preqrequisites) and see how easy it is to start collecting on your own observability platform.
 
 ### Why?
 We're tired of cloud-based observability providers drawing users in with low introductory costs; meanwhile locking *your* data into *their* cloud and later charging big bills on everything they can (e.g. users, time series, alerts, resources, SSO). At Logship, we believe that your data is *your* data. Why wouldn’t it be? Whether it be a laptop, desktop, datacenter, homelab, or something in-between: Logship services give you total control. 

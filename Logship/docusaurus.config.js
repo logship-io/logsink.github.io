@@ -132,7 +132,7 @@ const config = {
                 label: 'Docs',
                 to: '/docs/intro',
               },
-            { to: '/docs/getting-started', label: 'Get Started ⇥', position: 'left' },
+            { to: '/docs/getting-started/prerequisites', label: 'Get Started ⇥', position: 'left' },
             ],
           },
           {
