@@ -1,27 +1,27 @@
 ---
 sidebar_position: 1
+sidebar_label: Welcome
+pagination_prev: null
+pagination_next: getting-started/prerequisites
 ---
 
 # Welcome
+Welcome to the logship documentation!
 
-Welcome to logship, the most scaleable metrics, logging, and analytics platform available.
+## What's Logship?
+Logship is a scalable, highly available, all-in-one platform for metrics, logging, and analytics. It's designed to be simple to host and deploy on commodity infrastructure.
 
 ![Screenshot](../static/img/screenshots/2022-08-03/logship_charts.jpeg)
 
-## What's Logship?
+### Solutions
+* A massively scalable database and query engine for time-series data.
+* CLI and UI tools for data management, configuration, and control.
+* An open source agent for metrics and logs ingestion.
 
-Logship is an all-in-one logs aggregation, visualization, and query platform; designed to deploy onto commodity user-provided infrastructure.
-
-Logship provides:
-* A horizontally massively scaleable query engine for timeseries data
-* A Kusto based query interface
-* A UI for data management, configuration, and control
-* An open source agent for metrics and logs ingestion
-
-All of this, deploys onto your own datastructure.
+All of this easily deployed *almost* anywhere. [Get started](/docs/getting-started/) and see how easy it is to start collecting on your own observability platform.
 
 ### Why?
-So why did we even build this... Well, we're tired of cloud based metrics and analytics services drawing people in, owning their data, and charging big bills. Your data is your own. Why wouldn’t it be. Logship services are designed to run on offline infrastructure, which means you’re in control. 
+We're tired of cloud-based observability providers drawing users in with low introductory costs; meanwhile locking *your* data into *their* cloud and later charging big bills on everything they can (e.g. users, time series, alerts, resources, SSO). At Logship, we believe that your data is *your* data. Why wouldn’t it be? Whether it be a laptop, desktop, datacenter, homelab, or something in-between: Logship services give you total control. 
 
 ### Don’t pay to play
 As you grow, Logship scales with your hardware. You don’t pay more. 
@@ -29,8 +29,15 @@ As you grow, Logship scales with your hardware. You don’t pay more.
 ### Infinite horizontal scale
 The more machines you have, the more Logship can parallelize your query workloads.
 
-The Logship ecosystem is made up of 4 components:
-* Logship UI
+### Simple Deployment
+
+A Logship deployment is made up of 3 components:
 * Logship Management Service
 * Logship Database
 * Logship Agent
+
+### Simple Management
+
+We provide tools to make managing Logship easy in all environments:
+* Logship UI: A web interface for managing and querying Logship.
+* Logship CLI ([logsh](https://github.com/logship-io/logsh)): A command-line interface for managing and querying Logship.
