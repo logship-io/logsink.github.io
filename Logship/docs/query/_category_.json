@@ -1,8 +1,0 @@
-{
-  "label": "Query",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Kusto query language reference."
-  }
-}

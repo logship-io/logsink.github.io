@@ -113,7 +113,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          { to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'BlogShip', position: 'left'},
           { to: '/pricing', label: 'Pricing', position: 'left'},
           {
             href: 'https://github.com/logship-io',
@@ -139,7 +139,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'BlogShip',
                 to: '/blog',
               },
               {
