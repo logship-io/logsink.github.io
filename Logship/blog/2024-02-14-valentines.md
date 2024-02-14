@@ -6,7 +6,7 @@ authors:
 tags: [valentines, logship, love, observability, metrics]
 ---
 
-Logship would like to wish all of our users a happy Valentine's day! We know you're out there and we're thinking about you.
+Logship would like to wish all of our users a happy Valentine's Day! We know you're out there and we're thinking about you.
 
 We understand that things have been quiet from our side for a while, but we've been hard at work building the next-generation observability platform for the masses.
 
