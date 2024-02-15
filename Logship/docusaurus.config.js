@@ -20,7 +20,7 @@ const logo = (() => {
       return 'img/homepage/logo_usa.svg';
   } else if (now.getMonth() === 10 && now.getDate() >= 10) {
       return 'img/homepage/logo_thanksgiving.svg';
-  } else if (now.getMonth() === 1 && now.getDate() >= 10 && now.getDate() <= 20) {
+  } else if (now.getMonth() === 1 && now.getDate() >= 10 && now.getDate() <= 15) {
       return 'img/homepage/logo_valentines.svg';
   } else {
       return 'img/homepage/logo.svg';
