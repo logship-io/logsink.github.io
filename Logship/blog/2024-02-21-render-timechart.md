@@ -28,7 +28,9 @@ logship.backend.server.api
 | render timechart
 ```
 
-![Timechart gif](..//static/img/screenshots/2024-02-21/logship-timechart-basic.png)
+A quick demo is available below
+
+![Timechart gif](..//static/img/screenshots/2024-02-21/logship-render-timechart.gif)
 
 Enjoy! Feedback welcome. 
 
