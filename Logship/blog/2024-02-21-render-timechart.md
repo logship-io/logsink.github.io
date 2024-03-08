@@ -10,7 +10,7 @@ Experimental timeseries plot rendering is now available in the UI!
 
 ![Timechart basic](..//static/img/screenshots/2024-02-21/logship-timechart-basic.png)
 
-This unlocked the `render` opertion, which is only available as the last expression in a query.
+This unlocked the `render` operation, which is available as the last expression in a query.
 
 ```kusto
 table_name
