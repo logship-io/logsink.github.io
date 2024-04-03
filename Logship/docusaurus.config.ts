@@ -1,17 +1,14 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import { themes as prismThemes } from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const path = require('path');
-
-function getNthWeekdayOfMonth(year, month, weekday, n) {
+function getNthWeekdayOfMonth(year, month, weekday, n): Date {
   const date = new Date(year, month, 1);
   date.setDate(1 + (weekday - date.getDay() + 7) % 7 + (n - 1) * 7);
   return date;
 }
 
-const logo = (() => {
+const logo: () => string = (() => {
   const now = new Date();
   const tgiving = getNthWeekdayOfMonth(now.getFullYear(), 10, 4, 4); // Thanksgiving Day - Fourth Thursday in November
   if (now > tgiving && (now.getMonth() == 11 || now.getDate() > tgiving.getDate())) {
@@ -25,12 +22,11 @@ const logo = (() => {
   } else {
       return 'img/homepage/logo.svg';
   }
-})();
+});
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: 'logship',
-  tagline: 'Logs aggregation for the masses',
+  tagline: 'Data Analytics for the Masses',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -38,15 +34,10 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'logship-io', // Usually your GitHub org/user name.
-  projectName: 'logsink.github.io', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -57,9 +48,10 @@ const config = {
   },
 
   plugins: [
-    path.resolve(__dirname, './plugins/logship-analytics'),
+    'docusaurus-plugin-sass',
+    './plugins/logship-analytics',
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+      "@cmfcmf/docusaurus-search-local",
       {
         indexDocs: true,
         indexBlog: true,
@@ -71,31 +63,20 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/logship-io/logsink.github.io/tree/master/Logship',
+          sidebarPath: './sidebars.js',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/logship-io/logsink.github.io/tree/master/Logship',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/scss/custom.scss',
         },
-      }),
+      } satisfies Preset.Options),
     ],
   ],
-
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -103,7 +84,7 @@ const config = {
         title: 'Logship',
         logo: {
           alt: 'Logship Logo',
-          src: logo,
+          src: logo(),
         },
         items: [
           { to: '/docs/getting-started/prerequisites', label: 'Get Started ⇥', position: 'left' },
@@ -154,10 +135,10 @@ const config = {
       },
       prism: {
         additionalLanguages: ['powershell', 'kusto'],
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
-    }),
+    } satisfies Preset.ThemeConfig),
 };
 
-module.exports = config;
+export default config;
