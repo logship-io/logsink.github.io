@@ -2,6 +2,8 @@
 
 const INFLOW_URL = 'https://backend.logship.io';
 const INFLOW_ACCOUNT = '00000000-0000-0000-0000-000000000000';
+const INFLOW_AUTH = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzY29wZTppbmZsb3ciOlsiYWNjb3VudDowMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJzY2hlbWE6bG9nc2hpcC5wdWJsaWMucGFnZS52aXNpdCJdLCJuYmYiOjE3MjA1NDU1NjUsImV4cCI6MTc1MjA4MTU2NCwiaWF0IjoxNzIwNTQ1NTY1LCJpc3MiOiJsb2dzaGlwIiwiYXVkIjoibG9nc2hpcCJ9.fRcDI86NCHR0ll9FsMKOhtVnd-V8iQcG9yYxyFjr4Pu6OxSCKFi7QJKtJr6fbTGDe6hHuSLhnl_Nr_qdJEKR3w';
+
 const uuid = function(){
     return Array
      .from(Array(16))
@@ -25,8 +27,9 @@ const logMetric = (name, value, ...tags) => {
     fetch(url, {
         method: 'PUT',
         headers: {
-            'Content-Type': 'application/json',
             'Accept': 'application/json',
+            'Authorization': `Bearer ${INFLOW_AUTH}`,
+            'Content-Type': 'application/json',
         },
         body : JSON.stringify([
             {
