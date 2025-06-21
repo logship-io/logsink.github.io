@@ -95,7 +95,8 @@ const config: Config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'BlogShip', position: 'left'},
-          { to: '/pricing', label: 'Pricing', position: 'left'},
+          { to: '/products', label: 'Products', position: 'left'},
+          { to: '/contact', label: 'Contact', position: 'left'},
           {
             href: 'https://github.com/logship-io',
             label: 'GitHub',
@@ -122,6 +123,10 @@ const config: Config = {
               {
                 label: 'BlogShip',
                 to: '/blog',
+              },
+              {
+                label: 'Contact',
+                to: '/contact',
               },
               {
                 label: 'GitHub',
