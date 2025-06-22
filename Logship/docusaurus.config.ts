@@ -49,15 +49,7 @@ const config: Config = {
 
   plugins: [
     'docusaurus-plugin-sass',
-    './plugins/logship-analytics',
-    [
-      "@cmfcmf/docusaurus-search-local",
-      {
-        indexDocs: true,
-        indexBlog: true,
-        language: ["en"],
-      },
-    ]
+    './plugins/logship-analytics'
   ],
 
   presets: [
