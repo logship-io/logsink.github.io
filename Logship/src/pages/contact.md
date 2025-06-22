@@ -12,4 +12,4 @@ Our team brings together a diverse blend of experience from big tech, agile star
 
 Whether you're exploring a partnership, looking to integrate, or have questions about how we can support your business, we’re here to help.
 
-Reach out at [peter@logship.io](mailto:peter@logship.io) and someone from our team will be in touch shortly.
+Reach out at [contact@logship.io](mailto:contact@logship.io) and someone from our team will be in touch shortly.
