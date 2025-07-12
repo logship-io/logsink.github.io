@@ -10,11 +10,11 @@ Logship is our flagship platform—a robust, scalable, and highly available solu
 
 ### Pricing
 * **Small Deployments:** Free for deployments up to 16 cores—ideal for most small business needs.
-* **Larger Deployments:** Please contact us for tailored pricing options based on your specific requirements. 
+* **Larger Deployments:** Please [contact@logship.io](mailto:contact@logship.io) for tailored pricing options based on your specific requirements. 
 
 ## Custom Solutions and Consulting
 
-Our team offers expert consulting and custom software solutions designed to tackle your most complex technical challenges. Whether you need to integrate advanced sensor technologies, deploy on edge devices, or develop solutions for specialized applications, we bring the expertise and creativity necessary to turn your ideas into reality. Contact us to discuss your unique project requirements.
+Our team offers expert consulting and custom software solutions designed to tackle your most complex technical challenges. Whether you need to integrate advanced sensor technologies, deploy on edge devices, or develop solutions for specialized applications, we bring the expertise and creativity necessary to turn your ideas into reality. Contact us to discuss your unique project requirements. [contracting@logship.io](mailto:contracting@logship.io)
 
 ## For U.S. Government Customers
 
