@@ -4,7 +4,7 @@ label: Setup | Config
 ---
 
 Contents:
-- [Agent Configuration](#agent-configuration)
+- [Agent Configuration](#Agent Configuration)
   - [Example](#example)
   - [Output](#output)
   - [Logging](#logging)

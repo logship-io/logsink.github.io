@@ -18,5 +18,5 @@
         * [table](./language/tablular/table.md)
         * [union](./language/tablular/union.md)
         * [where](./language/tablular/where.md)
-    * [Expressions](./language/expressions)
+    * [Expressions](./language/expressions.md)
     * [Types](./language/types.md)

@@ -121,6 +121,10 @@ const config: Config = {
                 to: '/contact',
               },
               {
+                label: 'Careers',
+                to: '/careers',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/logship-io',
               },
