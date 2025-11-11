@@ -16,4 +16,4 @@ For native installation instructions please take a look at the following links!
 
 The release packages are available here: [https://github.com/logship-io/logship-agent/releases/latest]https://github.com/logship-io/logship-agent/releases/latest
 
-- [OpenWRT](./targets/01-openwrt)
+- [OpenWRT](./targets/openwrt)

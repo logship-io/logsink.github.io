@@ -1,6 +1,6 @@
 # Query
 
-- [Basics](./basics)
+- [Basics](/docs/query/basics)
 - Language
   - Functions
     - Aggregate
@@ -43,6 +43,5 @@
     - [table](/docs/query/language/tablular/table)
     - [union](/docs/query/language/tablular/union)
     - [where](/docs/query/language/tablular/where)
-    - [case](/docs/query/language/tablular/case)
   - [Types](/docs/query/language/types.md)
   - [Expressions](/docs/query/language/expressions.md)
