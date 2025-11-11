@@ -10,9 +10,6 @@ This example will use a template docker-compose file from our logship-deployment
 
 ### Scripts Only
 
-<Tabs groupId="daemon" defaultValue="docker">
-  <TabItem value="docker" label="Docker" default>
-
 ```shell
 git clone https://github.com/logship-io/logship-deployments.git
 cd logship-deployments/src/docker-compose/single-node
@@ -20,9 +17,6 @@ docker-compose pull
 docker-compose up -d
 # Open http://localhost:8000/setup in your browser
 ```
-
-  </TabItem>
-</Tabs>
 
 ### Guided
 

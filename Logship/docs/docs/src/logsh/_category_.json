@@ -1,8 +1,0 @@
-{
-  "label": "logsh CLI",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "The logship command-line interface."
-  }
-}

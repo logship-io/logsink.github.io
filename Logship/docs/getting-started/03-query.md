@@ -10,15 +10,9 @@ Now that you have Logship running, let's explore how to query your data. This gu
 
 1. First, ensure your Logship instance is running:
 
-<Tabs groupId="daemon" defaultValue="docker">
-<TabItem value="docker" label="Docker" default>
-
 ```shell
 docker-compose up -d
 ```
-
-</TabItem>
-</Tabs>
 
 2. Navigate to the Logship Frontend:
    - Open your browser and go to [http://localhost:8000/](http://localhost:8000/)
