@@ -1,0 +1,39 @@
+# exp_avg
+
+The exp_avg function calculates the exponential moving average of a column within each group.
+
+## Spec
+
+```
+exp_avg(column, alpha)
+```
+
+### Parameters
+
+```
+column - The column to calculate the exponential average for.
+alpha - The smoothing factor (between 0 and 1).
+```
+
+### Return Value
+
+```
+The exponential moving average value.
+```
+
+## Example
+
+Calculate exponential moving average:
+
+```kusto
+datatable(val:real)[1, 2, 3, 4, 5]
+| extend exp_avg_val = exp_avg(val, 0.5)
+```
+
+| val | exp_avg_val |
+| --- | ----------- |
+| 1   | 1           |
+| 2   | 1.5         |
+| 3   | 2.25        |
+| 4   | 3.125       |
+| 5   | 4.0625      |
